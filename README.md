@@ -1,5 +1,5 @@
 This is my **2nd task** of **Prodigy summer internship** in which we  do image encryption tool using pixel manipulation
-using numpy and pillow manipulation
+using numpy and pillow manipulation.
 
 **Key Features**: Image Manipulation in Python.
 Loading: Open and read various image formats such as JPEG, PNG, BMP, GIF, and TIFF.
