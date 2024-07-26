@@ -1,0 +1,24 @@
+from PIL import Image
+import numpy as np
+import os
+def encrypt_image(image_location, key):
+    try:
+        original_image = Image.open(image_location)
+    except (IOError, OSError):
+        print("Invalid location. Image not found or unable to open the image.")
+        return
+    image_array = np.array(original_image)
+    encrypted_pixels = (image_array + key) % 256
+    encrypted_image = Image.fromarray(encrypted_pixels.astype('uint8'))
+    encrypted_image_path = os.path.join(os.path.dirname(image_location), 'encrypted.png')
+    encrypted_image.save(encrypted_image_path)
+    print(f"Image encryption completed. Encrypted image saved as {encrypted_image_path}")
+def decrypt_image(image_location, key):
+    try:
+        original_image = Image.open(image_location)
+    except (IOError, OSError):
+        print("Invalid location. Image not found or unable to open the image.")
+        return
+if __name__ == "__main__":
+    main()
+
