@@ -2,7 +2,9 @@ This is my **2nd task** of **Prodigy summer internship** in which we  do image e
 using numpy and pillow manipulation.
 
 **Key Features**: Image Manipulation in Python.
+
 Loading: Open and read various image formats such as JPEG, PNG, BMP, GIF, and TIFF.
+
 Saving: Save images in different formats and control quality/compression.
 
 **Libraries**: Image Manipulation in Python.
